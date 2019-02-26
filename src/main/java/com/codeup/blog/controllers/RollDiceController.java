@@ -17,9 +17,14 @@ public class RollDiceController {
 
     @GetMapping("/roll-dice/n")
     @ResponseBody
-    public int randomNumber(){
-        Random random = new Random();
-        return 0;
-    }
+    public void randomNumber() {
+        int max = 6;
+        int min = 0;
+        int range = max - min + 1;
 
+        for (int i = 0; i < 6; i++) {
+
+            int rand = (int) (Math.random() * range) + min;
+        }
+    }
 }
