@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class HowdyController {
+
     @GetMapping("/howdy/{name}")
+
     public String sayHello(@PathVariable String name, Model model) {
+
         model.addAttribute("name", name);
+
         return "howdy";
     }
 }

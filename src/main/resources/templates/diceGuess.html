@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8"/>
+
+    <title>Your guess:</title>
+
+</head>
+
+<body>
+
+    <h1>You guessed: <span th:text="${roll}"></span></h1>
+
+    <h2>You rolled: </h2>
+
+    <!--if the user answer matches the random number display this-->
+
+    <h3>You guessed correctly!</h3>
+
+    <!--if the user answer does NOT match the random number display this-->
+
+    <h3>Sorry, you guessed incorrectly :(</h3>
+
+</body>
+
+</html>
