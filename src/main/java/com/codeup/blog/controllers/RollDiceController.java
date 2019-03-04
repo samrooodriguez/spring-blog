@@ -11,7 +11,7 @@ import java.util.Random;
 public class RollDiceController {
     @GetMapping("/roll-dice")
     @ResponseBody
-    public String userGuess(){
+    public String userGuess() {
         return "<h1> GUESS A NUMBA' FOOL </h1>";
     }
 
