@@ -25,5 +25,21 @@ public class RollDiceController {
         return "diceGuess";
     }
 
+    @GetMapping("/roll-dice/{diceRoll}")
+    public String diceRoll(@PathVariable String diceRoll, Model model){
+
+        model.addAttribute("diceRoll", diceRoll);
+
+        return "diceGuess";
+    }
+
+    @GetMapping("/roll-dice/{randomNumber}")
+    public String randomNum(@PathVariable int randomNumber, Model model ){
+        int random = (int) Math.ceil(Math.random() * 6);
+        model.addAttribute("random", random);
+        model.addAttribute("randomNumber", randomNumber);
+        return "diceGuess";
+    }
+
 
 }
