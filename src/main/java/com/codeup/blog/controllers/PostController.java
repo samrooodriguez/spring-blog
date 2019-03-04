@@ -11,7 +11,7 @@ public class PostController {
     @GetMapping("/posts")
     @ResponseBody
     public String allPosts() {
-        return "";
+        return "index";
     }
 
     @GetMapping("/posts/{id}")
@@ -29,7 +29,7 @@ public class PostController {
     @PostMapping("posts/create")
     @ResponseBody
     public String createdPost(){
-        return "New post created";
+        return "show";
     }
 
 }
