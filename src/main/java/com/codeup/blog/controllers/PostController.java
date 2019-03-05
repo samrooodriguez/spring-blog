@@ -21,9 +21,8 @@ public class PostController {
     }
 
     @GetMapping("posts/create")
-    @ResponseBody
     public String createPost(){
-        return " <h1> Enter in a blog post: </h1> <form>  <input type='text' name=createPost </form>";
+        return "blogPostForm";
     }
 
     @PostMapping("posts/create")
