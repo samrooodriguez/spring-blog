@@ -20,14 +20,15 @@ public class PostController {
         return id;
     }
 
-    @GetMapping("posts/create")
+    @GetMapping("/posts/create")
     public String createPost(){
         return "posts/create";
     }
 
-    @PostMapping("posts/create")
+    @PostMapping("/posts/show")
     public String createdPost(){
         return "posts/show";
     }
 
 }
+
