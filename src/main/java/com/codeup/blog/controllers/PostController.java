@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class PostController {
+
     @GetMapping("/posts")
-    @ResponseBody
-    public String allPosts() {
-        return "index";
+    public String allPosts(){
+        return "posts/index";
     }
 
     @GetMapping("/posts/{id}")
@@ -27,9 +27,8 @@ public class PostController {
     }
 
     @PostMapping("posts/create")
-    @ResponseBody
     public String createdPost(){
-        return "show";
+        return "posts/show";
     }
 
 }
